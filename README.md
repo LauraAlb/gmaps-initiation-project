@@ -23,10 +23,10 @@ In this exercise you will work with DIRECTIONS: https://developers.google.com/ma
 
 1) Create a new module called 'exerciseTwo' with a directive, controller, etc. to show a panel when clicking on Exercise 2 button (as we do with the Exercise 1 button). In this panel, create a form with:
 
-	a) two inputs: origin and destination
-	b) a select with three options (walking, driving and public transport) for the travel mode
-	c) a submit button
-	d) a panel to show the steps directions
+* two inputs: origin and destination
+* a select with three options (walking, driving and public transport) for the travel mode
+* a submit button
+* a panel to show the steps directions
 
 2) Create a Directions service object using the constructor class: google.maps.DirectionsService();
 
