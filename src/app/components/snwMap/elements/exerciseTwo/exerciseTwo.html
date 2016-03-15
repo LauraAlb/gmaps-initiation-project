@@ -1,0 +1,20 @@
+<div class="tabs">
+  <a ng-click="onClickTab('exerciseTwo')" class="btn btn-default">2</a>
+</div>
+<div class="wrapper">
+  <div class="panel-content" ng-show="tabActive === 'exerciseTwo'">
+    <h3 class="title">
+      EJERCICIO 2
+    </h3>
+    </br>
+    <div id="top_content">
+      Origin:
+      <input id="origin" type="text" /> Destination:
+      <input id="destination" type="text" />
+      <input type="button" value="Get Me Directions" ng-click="showDirections()" /> 
+      </br></br>
+      <div id="directions-panel">Directions displayed here:</div>
+    </div>
+  </div>
+</div>
+
