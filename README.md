@@ -52,4 +52,4 @@ In this exercise you will work with DIRECTIONS: https://developers.google.com/ma
 	
 ### Exercise 4
 
-1. In Exercise 2, include a Place Autocomplete for both inputs Origin and Destination. 
+1. In Exercise 2, include a Place Autocomplete for both inputs Origin and Destination. https://developers.google.com/maps/documentation/javascript/places-autocomplete#introduction
