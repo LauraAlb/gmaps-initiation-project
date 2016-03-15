@@ -32,9 +32,9 @@ In this exercise you will work with DIRECTIONS: https://developers.google.com/ma
 
 3) The DirectionsResult contains the result of the directions query, which you may either handle yourself, or pass to a DirectionsRenderer object, which can automatically handle displaying the result on the map. To display a DirectionsResult using a DirectionsRenderer, you simply need to do the following:
 
-	a) Create a DirectionsRenderer object.
-	b) Use setMap() on the renderer to bind it to the map.
-	c) Use setPanel() on the renderer to indicate where to print the step by step directions.
+* Create a DirectionsRenderer object.
+* Use setMap() on the renderer to bind it to the map.
+* Use setPanel() on the renderer to indicate where to print the step by step directions.
 	
 4) Use the route method of the directions service to calculate directions, passing the response in callback function to the setDirections() method of the renderer to handle to display of steps and polyline.
 
