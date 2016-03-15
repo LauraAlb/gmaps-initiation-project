@@ -52,7 +52,7 @@ In this exercise you will work with DIRECTIONS: https://developers.google.com/ma
 
 1. Create a panel with the following input elements (origin1, origin2, destinationA, destinationB) where users can enter the origins and destinations and a select with the options (miles, kilometers) to choose the metric.
 
-2. To use the Distance Matrix service in JS v3 API:
+2. To use the Distance Matrix service in JS v3 API: https://developers.google.com/maps/documentation/distance-matrix/intro
 
 	* First, in the init function, create a Distance Matrix service object using the constructor class: google.maps.DistanceMatrixService()
 	* Next, use the getDistanceMatrix() method to initiate a request to the Distance Matrix service, passing it an object literal containing the origins, destinations, and travel mode, as well as a callback method to execute upon receipt of the response.
