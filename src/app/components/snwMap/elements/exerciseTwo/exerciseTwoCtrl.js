@@ -10,10 +10,6 @@
     }
 
     function init() {
-      //create directionsService object here
-      $scope.directionsService = new google.maps.DirectionsService();
-      //setup directionsDisplay object here
-      $scope.directionsDisplay = new google.maps.DirectionsRenderer();
       $scope.directionsDisplay.setMap($scope.map);
       $scope.directionsDisplay.setPanel(document.getElementById('directions-panel'));
     }
@@ -23,7 +19,7 @@
       var request = {
         origin: document.getElementById('origin').value,
         destination: document.getElementById('destination').value,
-        travelMode: google.maps.DirectionsTravelMode.DRIVING
+        travelMode: google.maps.DirectionsTravelMode[document.getElementById('mode').value]
       };
       $scope.directionsService.route(request, function(response, status) {
         if (status === google.maps.DirectionsStatus.OK) {
@@ -31,16 +27,17 @@
         }
       });
     };
-    init();
     angular.extend($scope, {
       panelVisible: false,
       tabActive: null,
-      disabledToggle: {},
       onClickTab: onClickTab,
-      directionsService: null,
-      directionsDisplay: null,
+      //create directionsService object here
+      directionsService: new google.maps.DirectionsService(),
+      //setup directionsDisplay object here
+      directionsDisplay: new google.maps.DirectionsRenderer(),
       showDirections: showDirectionsFn
     });
+    init();
   };
 
   angular.module('snwMap.exerciseTwo').controller('exerciseTwoCtrl', exerciseTwoCtrl);

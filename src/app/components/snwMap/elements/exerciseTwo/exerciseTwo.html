@@ -8,11 +8,26 @@
     </h3>
     </br>
     <div id="top_content">
+    <p>
       Origin:
-      <input id="origin" type="text" /> Destination:
+      <input id="origin" type="text" /> 
+    </p>
+    <p>
+      Destination:
       <input id="destination" type="text" />
+    </p>
+    <p>
+      Travel mode: 
+      <select id="mode">
+        <option value="WALKING">walking</option>
+        <option value="DRIVING">driving</option>
+		<option value="TRANSIT">public transport</option>
+	  </select>
+    </p>
+	<p>
       <input type="button" value="Get Me Directions" ng-click="showDirections()" /> 
-      </br></br>
+    </p>
+      </br>
       <div id="directions-panel">Directions displayed here:</div>
     </div>
   </div>
