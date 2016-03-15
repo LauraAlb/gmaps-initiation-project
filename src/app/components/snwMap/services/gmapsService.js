@@ -15,20 +15,6 @@
         }
         return map;
       };
-
-      // Create a createMarker function in service
-      this.createMarker = function(map, location) {
-        var marker = new google.maps.Marker({
-          map: map,
-          position: location
-        });
-        return marker;
-      };
-
-      this.updateInfoWindow = function(map, marker, infoW, content) {
-        infoW.setContent(content);
-        infoW.open(map, marker);
-      };
     };
     return new GmapsService();
   };

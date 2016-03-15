@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-  angular.module('snwMap', ['snwMap.gmap', 'snwMap.exerciseOne', 'snwMap.exerciseTwo'
+  angular.module('snwMap', ['snwMap.gmap', 'snwMap.exerciseOne'
     ])
     .config(function(GoogleMapApiProvider) {
       GoogleMapApiProvider.configure({
