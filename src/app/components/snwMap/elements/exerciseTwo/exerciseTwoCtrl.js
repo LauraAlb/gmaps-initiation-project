@@ -32,6 +32,9 @@
       showDirections: showDirectionsFn
     });
     init();
+    $scope.$on('$destroy', function() {
+      window.console.log();
+    });
   };
 
   angular.module('snwMap.exerciseTwo').controller('exerciseTwoCtrl', exerciseTwoCtrl);
