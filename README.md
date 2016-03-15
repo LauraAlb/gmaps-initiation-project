@@ -1,8 +1,8 @@
 # gmaps-initiation-project
 
-1) npm install - to install all the npm modules
+* npm install - to install all the npm modules
 
-2) grunt dev - to create a dist and keep watching for changes. The app is running in port 4443.
+* grunt dev - to create a dist and keep watching for changes. The app is running in port 4443.
 
 ### Exercise 1
 
