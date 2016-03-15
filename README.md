@@ -1,5 +1,8 @@
 # gmaps-initiation-project
 
+npm install - to install all the npm modules
+grunt dev - to create a dist and keep watching changes. The app is running in port 4443.
+
 ### Exercise 1
 
 1. The starter code provided already loads a map and places a marker at at arbitrary location.
@@ -36,3 +39,7 @@
 	b) Next, use the getDistanceMatrix() method to initiate a request to the Distance Matrix service, passing it an object literal containing the origins, destinations, and travel mode, as well as a callback method to execute upon receipt of the response.
 
 	c) Accessing the Distance Matrix service is asynchronous, since the Google Maps API needs to make a call to an external server. For that reason, you need to pass a callback method (like you did in previous step) to process the results.
+	
+### Exercise 4
+
+1. In Exercise 2, include a Place Autocomplete for both inputs Origin and Destination. 
