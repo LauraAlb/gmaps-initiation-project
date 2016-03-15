@@ -1,6 +1,5 @@
 (function() {
   'use strict';
-  angular.module('app', ['app.filters', 'snwMap'])
-;
+  angular.module('app', ['app.filters', 'snwMap']);
 })();
 

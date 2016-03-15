@@ -33,8 +33,6 @@
       });
     };
     angular.extend($scope, {
-      panelVisible: false,
-      tabActive: null,
       onClickTab: onClickTab,
       //create directionsService object here
       directionsService: new google.maps.DirectionsService(),

@@ -10,9 +10,6 @@
     }
 
     angular.extend($scope, {
-      panelVisible: false,
-      tabActive: null,
-      disabledToggle: {},
       onClickTab: onClickTab
     });
   };
