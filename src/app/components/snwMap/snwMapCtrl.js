@@ -3,8 +3,8 @@
   angular.module('snwMap')
     .controller('snwMapCtrl',
       function($scope, GoogleMapApi) {
-        var libs;
-        var updateTabActive = function(tabName) {
+        var libs, updateTabActive;
+        updateTabActive = function(tabName) {
           $scope.tabActive = ($scope.tabActive === tabName) ? null : tabName;
         };
         angular.extend($scope, {

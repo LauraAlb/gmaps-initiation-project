@@ -1,14 +1,6 @@
 (function() {
   'use strict';
   var exerciseTwoCtrl = function($scope) {
-    function onClickTab(tabName) {
-      if ($scope.tabActive === tabName) {
-        $scope.tabActive = null;
-      } else {
-        $scope.tabActive = tabName;
-      }
-    }
-
     function init() {
       var autocompleteOr, autocompleteDest;
       $scope.directionsDisplay.setMap($scope.map);
@@ -33,7 +25,6 @@
       });
     };
     angular.extend($scope, {
-      onClickTab: onClickTab,
       //create directionsService object here
       directionsService: new google.maps.DirectionsService(),
       //setup directionsDisplay object here

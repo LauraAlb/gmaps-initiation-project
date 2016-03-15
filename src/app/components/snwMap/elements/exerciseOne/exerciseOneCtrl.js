@@ -1,17 +1,7 @@
 (function() {
   'use strict';
-  var exerciseOneCtrl = function($scope) {
-    function onClickTab(tabName) {
-      if ($scope.tabActive === tabName) {
-        $scope.tabActive = null;
-      } else {
-        $scope.tabActive = tabName;
-      }
-    }
-
-    angular.extend($scope, {
-      onClickTab: onClickTab
-    });
+  var exerciseOneCtrl = function() {
+    window.console.log();
   };
 
   angular.module('snwMap.exerciseOne').controller('exerciseOneCtrl', exerciseOneCtrl);
