@@ -10,8 +10,13 @@
     }
 
     function init() {
+      var autocompleteOr, autocompleteDest;
       $scope.directionsDisplay.setMap($scope.map);
       $scope.directionsDisplay.setPanel(document.getElementById('directions-panel'));
+      autocompleteOr = new google.maps.places.Autocomplete(document.getElementById('origin'));
+      autocompleteDest = new google.maps.places.Autocomplete(document.getElementById('destination'));
+      autocompleteOr.bindTo('bounds', $scope.map);
+      autocompleteDest.bindTo('bounds', $scope.map);
     }
 
     //write function to calculate route and display it on map and panel
