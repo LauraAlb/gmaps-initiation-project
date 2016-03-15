@@ -1,3 +1,5 @@
+$panel-tabs-width: 60px;
+
 #mapContainer {
     margin: 0;
     snw-map {
@@ -6,7 +8,62 @@
         .snw-map-container {
             height: 100%;
             height: 100vh;
+        } 
+    }
+}
+
+.tabs {
+    position: absolute;
+    right: 0;
+    top: 1em;
+    width: $panel-tabs-width;
+}
+.sidebar-menu {
+    padding: 0;
+    right: 0;
+    height: 0;
+    overflow: visible;
+    .wrapper {
+        max-height: 100%;
+        background-color: transparent;
+        color: hsl(15, 2%, 50%);
+        overflow-x: visible;
+        transition: transform 0.5s;
+        position: relative;
+        top: 1em;
+        margin-right: $panel-tabs-width;
+        .panel-content {
+            background-color: $panel-bg-color;
+            padding: 2em;
+            margin: 0;
+            max-height: 100vh;
+            overflow: auto;
+            h3 {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
         }
     }
 }
+
+
+.panel-visible {
+    z-index: 12;
+    transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transition: transform 0.5s;
+    position: absolute;
+}
+
+.panel-hidden {
+    z-index: 12;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+}
+
+
+
 
