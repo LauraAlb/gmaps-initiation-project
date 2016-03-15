@@ -3,7 +3,10 @@
   angular.module('snwMap')
     .controller('snwMapCtrl',
       function($scope, GoogleMapApi) {
-        var libs;
+        var libs, updateTabActive;
+        updateTabActive = function(tabName) {
+          $scope.tabActive = ($scope.tabActive === tabName) ? null : tabName;
+        };
         angular.extend($scope, {
           libsReady: false,
           mapReady: false,
@@ -13,7 +16,9 @@
               lng: -5.984243
             },
             zoom: 13
-          }
+          },
+          tabActive: 'exerciseOne',
+          onClickTab: updateTabActive
         });
 
         libs = [].concat();

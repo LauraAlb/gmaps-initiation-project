@@ -1,6 +1,15 @@
 <div class="snw-map-container" ng-if="libsReady">
   <gmap class="col-xs-12"></gmap>
   <div class="snw-map-controls" ng-if="mapReady">
-    <exercise-one ng-if="mapReady" class="sidebar-menu col-md-5 col-lg-5 panel-visible"></exercise-one >
+	  <div class="tabs">
+		  <a ng-click="onClickTab('exerciseOne')" class="btn btn-default">Exercise 1</a>
+	  	  <a ng-click="onClickTab('exerciseTwo')" class="btn btn-default">Exercise 2</a>
+	  </div>
+	  <div class="sidebar-menu col-md-4 col-lg-4 panel-visible">
+		  <div class="wrapper">
+		  	<exercise-one></exercise-one>
+		  	<exercise-two></exercise-two>
+		  </div>
+	  </div>
   </div>
 </div>

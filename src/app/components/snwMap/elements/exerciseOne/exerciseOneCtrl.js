@@ -1,8 +1,7 @@
 (function() {
   'use strict';
   var exerciseOneCtrl = function($scope, gmapsService) {
-    function ejercicio1() {
-      window.console.log('INICIO EJERCICIO 1');
+    function init() {
       var geocoder, infowindow, formatAdress;
       formatAdress = 'formatted_address';
       geocoder = new google.maps.Geocoder();
@@ -31,36 +30,12 @@
       });
     }
 
-    function init() {
-      ejercicio1();
-    }
-
-    function cleanExer1() {
-      if ($scope.tabActive === 'exerciseOne') {
-        google.maps.event.removeListener($scope.eventClick);
-        $scope.marker.setMap(null);
-      } else {
-        init();
-      }
-    }
-
-    function onClickTab(tabName) {
-      cleanExer1();
-      if ($scope.tabActive === tabName) {
-        $scope.tabActive = null;
-      } else {
-        $scope.tabActive = tabName;
-      }
-    }
-
-    angular.extend($scope, {
-      panelVisible: false,
-      tabActive: 'exerciseOne',
-      disabledToggle: {},
-      onClickTab: onClickTab
+    init();
+    
+    $scope.$on('$destroy', function() {
+       google.maps.event.removeListener($scope.eventClick);
     });
 
-    init();
   };
 
   angular.module('snwMap.exerciseOne').controller('exerciseOneCtrl', exerciseOneCtrl);
