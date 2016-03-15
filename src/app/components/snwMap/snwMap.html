@@ -7,8 +7,8 @@
 	  </div>
 	  <div class="sidebar-menu col-md-4 col-lg-4 panel-visible">
 		  <div class="wrapper">
-		  	<exercise-one></exercise-one>
-		  	<exercise-two></exercise-two>
+		  	<exercise-one ng-if="tabActive === 'exerciseOne'"></exercise-one>
+		  	<exercise-two ng-show="tabActive === 'exerciseTwo'"></exercise-two>
 		  </div>
 	  </div>
   </div>
