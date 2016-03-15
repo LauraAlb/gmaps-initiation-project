@@ -31,11 +31,9 @@
     }
 
     init();
-    
     $scope.$on('$destroy', function() {
-       google.maps.event.removeListener($scope.eventClick);
+      google.maps.event.removeListener($scope.eventClick);
     });
-
   };
 
   angular.module('snwMap.exerciseOne').controller('exerciseOneCtrl', exerciseOneCtrl);
