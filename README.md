@@ -1,7 +1,8 @@
 # gmaps-initiation-project
 
-npm install - to install all the npm modules
-grunt dev - to create a dist and keep watching changes. The app is running in port 4443.
+* npm install - to install all the npm modules
+
+* grunt dev - to create a dist and keep watching for changes. The app is running in port 4443.
 
 ### Exercise 1
 
@@ -18,15 +19,24 @@ grunt dev - to create a dist and keep watching changes. The app is running in po
 
 ### Exercise 2
 
-1) First, in the initialize function, create a Directions service object using the constructor class: google.maps.DirectionsService();
+In this exercise you will work with DIRECTIONS: https://developers.google.com/maps/documentation/javascript/directions
 
-2) The DirectionsResult contains the result of the directions query, which you may either handle yourself, or pass to a DirectionsRenderer object, which can automatically handle displaying the result on a map. To display a DirectionsResult using a DirectionsRenderer, you simply need to do the following:
+1) Create a new module called 'exerciseTwo' with a directive, controller, etc. to show a panel when clicking on Exercise 2 button (as we do with the Exercise 1 button). In this panel, create a form with:
 
-	a) Create a DirectionsRenderer object.
-	b) Use setMap() on the renderer to bind it to the map.
-	c) Use setPanel() on the renderer to indicate where to print the step by step directions.
+* two inputs: origin and destination
+* a select with three options (walking, driving and public transport) for the travel mode
+* a submit button
+* a panel to show the steps directions
+
+2) Create a Directions service object using the constructor class: google.maps.DirectionsService();
+
+3) The DirectionsResult contains the result of the directions query, which you may either handle yourself, or pass to a DirectionsRenderer object, which can automatically handle displaying the result on the map. To display a DirectionsResult using a DirectionsRenderer, you simply need to do the following:
+
+* Create a DirectionsRenderer object.
+* Use setMap() on the renderer to bind it to the map.
+* Use setPanel() on the renderer to indicate where to print the step by step directions.
 	
-3) Use the route method of the directions service to calculate directions, passing the response in callback function to the setDirections() method of the renderer to handle to display of steps and polyline.
+4) Use the route method of the directions service to calculate directions, passing the response in callback function to the setDirections() method of the renderer to handle to display of steps and polyline.
 
 
 ### Exercise 3
@@ -42,4 +52,4 @@ grunt dev - to create a dist and keep watching changes. The app is running in po
 	
 ### Exercise 4
 
-1. In Exercise 2, include a Place Autocomplete for both inputs Origin and Destination. 
+1. In Exercise 2, include a Place Autocomplete for both inputs Origin and Destination. https://developers.google.com/maps/documentation/javascript/places-autocomplete#introduction
