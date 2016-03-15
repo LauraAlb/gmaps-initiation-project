@@ -4,18 +4,22 @@
 
 * grunt dev - to create a dist and keep watching for changes. The app is running in port 4443.
 
+
+The starter code provided already loads a map and libraries.
+
 ### Exercise 1
 
-1. The starter code provided already loads a map and places a marker at at arbitrary location.
+1.  Create two functions in a service, one to place a marker in a location and another to create and update the content of the infoWindow. 
 
 2. Add an event listener to detect mouse clicks on the map
-	a) as the user clicks on the map, update the position of the marker to that of the event's latLng:
 
-	b) preview your map to make sure the marker moves as you click around the map
+	a) As the user clicks on the map, change the position of the marker to that of the event's latLng and set the center of the map to that location.
+
+	b) Preview your map to make sure the marker moves as you click around the map
 
 3. Modify the listener event handler function to reverse geocode the latLng to get a textual address
- 	a) add a Geocoder object in the initialize function and  modify the event handler function in 2a,
-     to use the geocode method to reverse geocode the event.latLng
+
+ 	a) Add a Geocoder object in the init function and modify the event handler function to use the geocode method to reverse geocode the event.latLng. Show the address in a infoWindow associated to the marker. 
 
 ### Exercise 2
 
