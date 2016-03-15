@@ -1,34 +1,29 @@
 (function() {
   'use strict';
-  var exerciseOneCtrl = function($scope) {
+  var exerciseOneCtrl = function($scope, gmapsService) {
     function ejercicio1() {
       window.console.log('INICIO EJERCICIO 1');
-      var geocoder, infowindow, marker, formatAdress;
+      var geocoder, infowindow, formatAdress;
       formatAdress = 'formatted_address';
       geocoder = new google.maps.Geocoder();
       infowindow = new google.maps.InfoWindow();
-      marker = new google.maps.Marker({
-        map: $scope.map,
-        position: new google.maps.LatLng(37.3565079, -5.9839408)
-      });
+      $scope.marker = gmapsService.createMarker($scope.map, $scope.map.getCenter());
       $scope.eventClick = google.maps.event.addListener($scope.map, 'click', function(event) {
         geocoder.geocode({
           'latLng': event.latLng
         }, function(results, status) {
           if (status === google.maps.GeocoderStatus.OK) {
             var contentString = 'No formatted address';
-
             //set the map center to the latlng where the user clicked on map
             $scope.map.setCenter(event.latLng);
             //place the marker the latlng where the user clicked on map
-            marker.setPosition(event.latLng);
+            $scope.marker.setPosition(event.latLng);
 
             //display formatted address in info window when marker is clicked
             if (results.length && results[0][formatAdress]) {
               contentString = results[0][formatAdress];
             }
-            infowindow.setContent(contentString);
-            infowindow.open($scope.map, marker);
+            gmapsService.updateInfoWindow($scope.map, $scope.marker, infowindow, contentString);
           } else {
             window.alert('Geocoder failed due to: ' + status);
           }
@@ -36,7 +31,21 @@
       });
     }
 
+    function init() {
+      ejercicio1();
+    }
+
+    function cleanExer1() {
+      if ($scope.tabActive === 'exerciseOne') {
+        google.maps.event.removeListener($scope.eventClick);
+        $scope.marker.setMap(null);
+      } else {
+        init();
+      }
+    }
+
     function onClickTab(tabName) {
+      cleanExer1();
       if ($scope.tabActive === tabName) {
         $scope.tabActive = null;
       } else {
@@ -44,13 +53,9 @@
       }
     }
 
-    function init() {
-      ejercicio1();
-    }
-
     angular.extend($scope, {
       panelVisible: false,
-      tabActive: null,
+      tabActive: 'exerciseOne',
       disabledToggle: {},
       onClickTab: onClickTab
     });
