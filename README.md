@@ -15,12 +15,14 @@ In this exercise you will work with GEOCODING: https://developers.google.com/map
 
 2. Add an event listener to detect mouse clicks on the map
 
-* As the user clicks on the map, change the position of the marker to that of the event's latLng and set the center of the map to that location.
-* Preview your map to make sure the marker moves as you click around the map
+	* As the user clicks on the map, change the position of the marker to that of the event's latLng and set the center of the map to that location.
+	* Preview your map to make sure the marker moves as you click around the map
 
 3. Modify the listener event handler function to reverse geocode the latLng to get a textual address
 
-* Add a Geocoder object in the init function and modify the event handler function to use the geocode method to reverse geocode the event.latLng. Show the address in a infoWindow associated to the marker. 
+	* Add a Geocoder object in the init function and modify the event handler function to use the geocode method to reverse geocode the event.latLng. Show the address in a infoWindow associated to the marker. 
+	* When the directive is destroyed, remember to remove the event handler (we don't want that behaviour when we click on the map for the next exercises).
+ 
 
 ### Exercise 2
 
