@@ -1,34 +1,34 @@
 $panel-tabs-width: 80px;
+.tabs {
+    position: absolute;
+    right: 0;
+    top: 1em;
+    width: $panel-tabs-width;
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        display: block;
+        width: $panel-tabs-width;
+        height: $panel-tabs-width;
+        font-size: $panel-tabs-width/2;
+        line-height: $panel-tabs-width;
+        text-align: center;
+        color: #a3a3a3;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background: no-repeat;
+        background-position: center;
+    }
+}
 .sidebar-menu {
     padding: 0;
     right: 0;
     height: 0;
     overflow: visible;
-    .tabs {
-        position: absolute;
-        right: 0;
-        top: 1em;
-        width: $panel-tabs-width;
-        a {
-            text-decoration: none;
-            cursor: pointer;
-            display: block;
-            width: $panel-tabs-width;
-            height: $panel-tabs-width;
-            font-size: $panel-tabs-width/2;
-            line-height: $panel-tabs-width;
-            text-align: center;
-            color: #a3a3a3;
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            background: no-repeat;
-            background-position: center;
-        }
-    }
     .wrapper {
         max-height: 100%;
         background-color: transparent;
@@ -52,64 +52,6 @@ $panel-tabs-width: 80px;
     }
 }
 
-.showButton {
-    position: absolute;
-    right: -37px;
-    height: 37px;
-    width: 37px;
-    cursor: pointer;
-    opacity: 0.7;
-    &.bclose {
-        &:after,
-        &:before {
-            display: block;
-            position: absolute;
-            border-left: 2px solid white;
-            width: 0;
-            height: 28px;
-            z-index: 9999;
-            content: "";
-            transition: .7s all ease-in-out;
-        }
-        &:after {
-            transform: rotate(45deg);
-            left: 48%;
-            top: 4px;
-        }
-        &:before {
-            transform: rotate(-45deg);
-            right: 48%;
-            top: 4px;
-        }
-    }
-    &.bopen {
-        &:after,
-        &:before {
-            display: block;
-            position: absolute;
-            border-left: 2px solid white;
-            width: 0;
-            height: 28px;
-            z-index: 9999;
-            content: "";
-            transition: .7s all ease-in-out;
-        }
-        &:after {
-            top: 0;
-            transform: rotate(90deg);
-            left: 33%;
-            width: 12px;
-        }
-        &:before {
-            top: 10px;
-            transform: rotate(-90deg);
-            left: 33%;
-            width: 12px;
-            border-right: 2px white solid;
-        }
-    }
-}
-
 
 .panel-visible {
     z-index: 12;
@@ -117,11 +59,6 @@ $panel-tabs-width: 80px;
     -moz-transform: translate(0, 0);
     transition: transform 0.5s;
     position: absolute;
-}
-
-.backVisible {
-    background-color: hsl(0, 0%, 50%);
-    opacity: 0.7;
 }
 
 .panel-hidden {
