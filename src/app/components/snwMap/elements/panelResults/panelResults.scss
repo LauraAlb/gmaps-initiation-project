@@ -1,0 +1,134 @@
+.panel-results {
+    margin-top: 20px;
+    .result-element {
+        width: 100%;
+        @include breakpoint($desk) {
+            width: 48%;
+        }
+        margin-right: 4%;
+        float: left;
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+}
+
+.panel-result {
+    height: 300px;
+    overflow: hidden;
+    .imgPlace {
+        width: 100%;
+        overflow: hidden;
+        background-position: center center;
+        background-size: cover;
+        min-height: 100px;
+        min-width: 100%;
+    }
+    .result-name {
+        background-color: #999999;
+        color: white;
+        font-weight: 600;
+        padding: 5px;
+        width: 100%;
+        border-radius: 0;
+        .title-text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border-radius: 0;
+            width: calc(100% - 20px);
+            margin-left: 10px;
+        }
+    }
+    .result-details {
+        font-size: 13px;
+        p {
+            margin-bottom: 5px;
+        }
+        i {
+            font-size: 1.3em;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            width: 30px;
+        }
+        span,
+        a {
+            display: inline-block;
+            width: 80%;
+            position: relative;
+            padding-left: 2.5em;
+        }
+    }
+    .more-info {
+        color: #22B572;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    &:hover {
+        cursor: pointer;
+        border-color: #4cae4c;
+        border-style: solid;
+    }
+    .get-in {
+        display: none;
+    }
+}
+
+.temporal {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  width: 280px!important;
+}
+.result-infowindow {
+    width: 100%;
+    overflow: hidden;
+    .result-element {
+        width: 100%;
+        .panel-result {
+            margin: 0;
+            background-color: $primary-color;
+            box-shadow: none;
+            border: 0;
+            height: auto;
+            &:hover {
+                cursor: default;
+            }
+            .get-in {
+                display: block;
+            }
+            .result-name {
+                color: white;
+                font-size: 1.6em;
+                .title-text {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    border-radius: 0;
+                    width: calc(100% - 40px);
+                    position: relative;
+                    top: 4px;
+                }
+            }
+            .imgDefault {
+                display: none;
+            }
+            .result-details {
+                color: white;
+                background-color: $primary-color;
+                height: auto;
+                a {
+                    color: #fff;
+                }
+                .hours{
+                  width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.selected .panel-result {
+    border: 3px solid #4cae4c;
+}

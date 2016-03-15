@@ -1,0 +1,385 @@
+[{
+  "id": 1,
+  "imagen": "garcia_cadena.jpg",
+  "denominacion": "García Cadena",
+  "tramos": [
+    "García Cadena - Chiriguaná",
+    "García Cadena - Bucaramanga",
+    "García Cadena - Puerto Wilches",
+    "Barrancabermeja - García Cadena"
+  ],
+  "corredor": [
+    "Corredor Central"
+  ],
+  "lng": "W73°47'31.7\"",
+  "lat": "N7°18'35.2\""
+}, {
+  "id": 2,
+  "imagen": "chiriguaná.jpg",
+  "denominacion": "Chiriguaná",
+  "tramos": [
+    "García Cadena - Chiriguaná",
+    "Chiriguaná - La Loma",
+    "Dibulla - Chiriguaná"
+  ],
+  "corredor": [
+    "Corredor Central",
+    "Corredor del Atlántico",
+    "Corredor de la Costa Caribe Nororiental"
+  ],
+  "lng": "W73°33'52.8\"",
+  "lat": "N9°21'44.4\""
+}, {
+  "id": 3,
+  "imagen": "dorada.jpg",
+  "denominacion": "La Dorada",
+  "tramos": [
+    "La Dorada - Cabañas",
+    "Facatativa - La Dorada"
+  ],
+  "corredor": [
+    "Corredor Central"
+  ],
+  "lng": "W74°40'13.5\"",
+  "lat": "N5°28'31.8\""
+}, {
+  "id": 4,
+  "imagen": "facatativá.jpg",
+  "denominacion": "Facatativá",
+  "tramos": [
+    "Facatativa - La Dorada",
+    "Facatativa - Bogotá"
+  ],
+  "corredor": [
+    "Corredor Central"
+  ],
+  "lng": "W74°21'18.7\"",
+  "lat": "N4°48'30.6\""
+}, {
+  "id": 5,
+  "imagen": "bogota_carga.jpg",
+  "denominacion": "Bogotá mercancías",
+  "tramos": [
+    "Facatativa - Bogotá"
+  ],
+  "corredor": [
+    "Corredor Central"
+  ],
+  "lng": "W74°06'25.3\"",
+  "lat": "N4°38'31.1\""
+}, {
+  "id": 6,
+  "imagen": "bogota_sabana.jpg",
+  "denominacion": "Bogotá Sabana",
+  "tramos": [
+    "Facatativa - Bogotá"
+  ],
+  "corredor": [],
+  "lng": "W74°04'59.6\"",
+  "lat": "N4°36'26.1\""
+}, {
+  "id": 7,
+  "imagen": "puertoberrio.jpg",
+  "denominacion": "Puerto Berrio (Grecia)",
+  "tramos": [
+    "Puerto Berrio - Barrancabermeja"
+  ],
+  "corredor": [
+    "Corredor Central"
+  ],
+  "lng": "W74°25'12.4\"",
+  "lat": "N6°27'36.5\""
+}, {
+  "id": 8,
+  "imagen": "puertoparra.jpg",
+  "denominacion": "Puerto Parra",
+  "tramos": [
+    "Puerto Berrio - Barrancabermeja"
+  ],
+  "corredor": [
+    "Corredor Central"
+  ],
+  "lng": "W74°03'23.6\"",
+  "lat": "N6°39'10.3\""
+}, {
+  "id": 9,
+  "imagen": "",
+  "denominacion": "San Rafael de Lebrija",
+  "tramos": [
+    "Puerto Berrio - Barrancabermeja"
+  ],
+  "corredor": [
+    "Corredor Central"
+  ],
+  "lng": "W73°53'08.4\"",
+  "lat": "N6°50'06.1\""
+}, {
+  "id": 10,
+  "imagen": "barrancabermeja.jpg",
+  "denominacion": "Barrancabermeja",
+  "tramos": [
+    "Puerto Berrio - Barrancabermeja",
+    "Barrancabermeja - García Cadena"
+  ],
+  "corredor": [
+    "Corredor Central"
+  ],
+  "lng": "W73°50'51.4\"",
+  "lat": "N7°03'54.1\""
+}, {
+  "id": 11,
+  "imagen": "cienaga.jpg",
+  "denominacion": "Ciénaga",
+  "tramos": [
+    "La Loma - Ciénaga",
+    "Ciénaga - Puerto Drummond"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W74°13'28.4\"",
+  "lat": "N11°00'20.2\""
+}, {
+  "id": 12,
+  "imagen": "drummond.jpg",
+  "denominacion": "Puerto Drummond",
+  "tramos": [
+    "Ciénaga - Puerto Drummond",
+    "Puerto Drummond - Santa Marta"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W74°13'05.6\"",
+  "lat": "N11°03'39.3\""
+}, {
+  "id": 13,
+  "imagen": "loma.jpg",
+  "denominacion": "La Loma",
+  "tramos": [
+    "Chiriguaná - La Loma",
+    "La Loma - Ciénaga"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W73°37'11.1\"",
+  "lat": "N9°34'34.8\""
+}, {
+  "id": 14,
+  "imagen": "",
+  "denominacion": "Aguas Frías",
+  "tramos": [
+    "Chiriguaná - La Loma"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W73°35'01.5\"",
+  "lat": "N9°27'23.1\""
+}, {
+  "id": 15,
+  "imagen": "santamarta.jpg",
+  "denominacion": "Santa Marta",
+  "tramos": [
+    "Puerto Drummond - Santa Marta"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W74°11'41.5\"",
+  "lat": "N11°15'09.5\""
+}, {
+  "id": 16,
+  "imagen": "puertoprodeco.jpg",
+  "denominacion": "Puerto Prodeco",
+  "tramos": [
+    "Puerto Drummond - Santa Marta"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W74°13'36.8\"",
+  "lat": "N11°06'35.1\""
+}, {
+  "id": 17,
+  "imagen": "pozoscolorados.jpg",
+  "denominacion": "Pozos Colorados",
+  "tramos": [
+    "Puerto Drummond - Santa Marta"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W74°13'33.6\"",
+  "lat": "N11°09'35.4\""
+}, {
+  "id": 18,
+  "imagen": "",
+  "denominacion": "Canoas",
+  "tramos": [
+    "La Loma - Ciénaga"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W73°39'40.5\"",
+  "lat": "N9°38'30.2\""
+}, {
+  "id": 19,
+  "imagen": "elpaso.jpg",
+  "denominacion": "El Paso",
+  "tramos": [
+    "La Loma - Ciénaga"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W73°43'12.8\"",
+  "lat": "N9°43'17.8\""
+}, {
+  "id": 20,
+  "imagen": "lomacolorada.jpg",
+  "denominacion": "Loma Colorada",
+  "tramos": [
+    "La Loma - Ciénaga"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W73°50'25.2\"",
+  "lat": "N9°53'56.3\""
+}, {
+  "id": 21,
+  "imagen": "bosconia.jpg",
+  "denominacion": "Bosconia",
+  "tramos": [
+    "La Loma - Ciénaga"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W73°53'15.8\"",
+  "lat": "N9°57'55.9\""
+}, {
+  "id": 22,
+  "imagen": "km815.jpg",
+  "denominacion": "Km 815",
+  "tramos": [
+    "La Loma - Ciénaga"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W73°48'16.4\"",
+  "lat": "N9°50'32.6\""
+}, {
+  "id": 23,
+  "imagen": "algarrobo.jpg",
+  "denominacion": "Algarrobo",
+  "tramos": [
+    "La Loma - Ciénaga"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W74°03'22.9\"",
+  "lat": "N10°12'05.3\""
+}, {
+  "id": 24,
+  "imagen": "",
+  "denominacion": "Lleras",
+  "tramos": [
+    "La Loma - Ciénaga"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W74°06'26.2\"",
+  "lat": "N10°18'43.6\""
+}, {
+  "id": 25,
+  "imagen": "",
+  "denominacion": "Santa Rosa",
+  "tramos": [
+    "La Loma - Ciénaga"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W74°07'00.1\"",
+  "lat": "N10°24'15.4\""
+}, {
+  "id": 26,
+  "imagen": "fundacion.jpg",
+  "denominacion": "Fundación",
+  "tramos": [
+    "La Loma - Ciénaga"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W74°10'57.8\"",
+  "lat": "N10°30'27.2\""
+}, {
+  "id": 27,
+  "imagen": "aracataca.jpg",
+  "denominacion": "Aracataca",
+  "tramos": [
+    "La Loma - Ciénaga"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W74°11'23.2\"",
+  "lat": "N10°35'29.7\""
+}, {
+  "id": 28,
+  "imagen": "sevilla.jpg",
+  "denominacion": "Sevilla",
+  "tramos": [
+    "La Loma - Ciénaga"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W74°09'29.6\"",
+  "lat": "N10°45'42.4\""
+}, {
+  "id": 29,
+  "imagen": "riofrio.jpg",
+  "denominacion": "Río Frío",
+  "tramos": [
+    "La Loma - Ciénaga"
+  ],
+  "corredor": [
+    "Corredor del Atlántico"
+  ],
+  "lng": "W74°10'26.2\"",
+  "lat": "N10°54'29.7\""
+}, {
+  "id": 30,
+  "imagen": "cerrejon.jpg",
+  "denominacion": "Mina Cerrejón",
+  "tramos": [
+    "Mina Cerrejón - Puerto Bolívar"
+  ],
+  "corredor": [
+    "Corredor de la Costa Caribe Nororiental"
+  ],
+  "lng": "W72°37'26.5\"",
+  "lat": "N11°07'59.0\""
+}, {
+  "id": 31,
+  "imagen": "puertobolivar.jpg",
+  "denominacion": "Puerto Bolívar",
+  "tramos": [
+    "Mina Cerrejón - Puerto Bolívar"
+  ],
+  "corredor": [
+    "Corredor de la Costa Caribe Nororiental"
+  ],
+  "lng": "W71°58'16.9\"",
+  "lat": "N12°14'20.8\""
+}]
+

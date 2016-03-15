@@ -1,0 +1,24 @@
+{
+  "name": "pcl-colombia-maps",
+  "version": "0.0.0",
+  "homepage": "PLC-Colombia-maps",
+  "authors": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "*",
+    "bootstrap-sass": "*",
+    "font-awesome": "*",
+    "jquery": "*",
+    "compass-breakpoint": "breakpoint-sass#~2.6.1",
+    "compass-mixins": "~1.0.2",
+    "angular-translate": "~2.8.1",
+    "angular-route": "~1.4.7",
+    "angular-sanitize": "~1.4.7"
+  }
+}

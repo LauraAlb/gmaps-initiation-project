@@ -1,0 +1,21 @@
+{
+  "extends": "../.jshintrc",
+
+  // Environments
+  "node": false, // Node.js
+
+  // Custom Globals
+  "globals": {
+    "google": true,
+    "angular": true,
+    "turf": true,
+    "rbush": true,
+    "knn": true,
+    "io": true,
+    "RichMarkerFactory": true,
+    "MarkerClusterer": true,
+    "InfoBubble": true,
+    "cartodb": true
+  } // additional predefined global variables
+}
+
