@@ -1,0 +1,35 @@
+<div class="panel-content">
+  <h3 class="title">
+    EXERCISE 3
+  </h3>
+  <form>
+    <div class="form-group">
+      <label for="originA">Origin A</label>
+      <input id="originA" type="text" class="form-control"/> 
+    </div>
+    <div class="form-group">
+      <label for="originB">Origin B</label>
+      <input id="originB" type="text" class="form-control"/> 
+    </div>
+    <div class="form-group">
+      <label for="destinationA">Destination A</label>
+      <input id="destinationA" type="text" class="form-control"/>
+    </div>
+    <div class="form-group">
+      <label for="destinationB">Destination B</label>
+      <input id="destinationB" type="text" class="form-control"/>
+    </div>
+    <div class="form-group">
+      <label for="units">Distance in </label>
+      <select id="units" class="form-control">
+          <option value="km">Kilometers</option>
+          <option value="mi">Miles</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <button id="calculate_distances" class="btn btn-default" type="button" ng-click="calculateDistances()">Calculate distances</button>
+    </div>
+    <div id="outputDiv">Distance and time: </div>
+</div>
+
+

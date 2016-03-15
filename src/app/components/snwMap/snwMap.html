@@ -4,11 +4,13 @@
 	  <div class="tabs">
 		  <a ng-click="onClickTab('exerciseOne')" class="btn btn-default">Exercise 1</a>
 	  	  <a ng-click="onClickTab('exerciseTwo')" class="btn btn-default">Exercise 2</a>
+	  	  <a ng-click="onClickTab('exerciseThree')" class="btn btn-default">Exercise 3</a>
 	  </div>
 	  <div class="sidebar-menu col-md-4 col-lg-4 panel-visible">
 		  <div class="wrapper">
 		  	<exercise-one ng-if="tabActive === 'exerciseOne'"></exercise-one>
-		  	<exercise-two ng-show="tabActive === 'exerciseTwo'"></exercise-two>
+		  	<exercise-two ng-if="tabActive === 'exerciseTwo'"></exercise-two>
+		  	<exercise-three ng-if="tabActive === 'exerciseThree'"></exercise-three>
 		  </div>
 	  </div>
   </div>

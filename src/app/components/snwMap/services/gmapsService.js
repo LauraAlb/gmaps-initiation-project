@@ -17,11 +17,14 @@
       };
 
       // Create a createMarker function in service
-      this.createMarker = function(map, location) {
+      this.createMarker = function(map, location, icon) {
         var marker = new google.maps.Marker({
           map: map,
           position: location
         });
+        if (icon) {
+          marker.setIcon(icon);
+        }
         return marker;
       };
 
