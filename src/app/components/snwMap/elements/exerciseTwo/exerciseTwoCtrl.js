@@ -1,0 +1,44 @@
+(function() {
+  'use strict';
+  var exerciseTwoCtrl = function($scope) {
+    function onClickTab(tabName) {
+      if ($scope.tabActive === tabName) {
+        $scope.tabActive = null;
+      } else {
+        $scope.tabActive = tabName;
+      }
+    }
+
+    function init() {
+      $scope.directionsDisplay.setMap($scope.map);
+      $scope.directionsDisplay.setPanel(document.getElementById('directions-panel'));
+    }
+
+    //write function to calculate route and display it on map and panel
+    var showDirectionsFn = function() {
+      var request = {
+        origin: document.getElementById('origin').value,
+        destination: document.getElementById('destination').value,
+        travelMode: google.maps.DirectionsTravelMode[document.getElementById('mode').value]
+      };
+      $scope.directionsService.route(request, function(response, status) {
+        if (status === google.maps.DirectionsStatus.OK) {
+          $scope.directionsDisplay.setDirections(response);
+        }
+      });
+    };
+    angular.extend($scope, {
+      panelVisible: false,
+      tabActive: null,
+      onClickTab: onClickTab,
+      //create directionsService object here
+      directionsService: new google.maps.DirectionsService(),
+      //setup directionsDisplay object here
+      directionsDisplay: new google.maps.DirectionsRenderer(),
+      showDirections: showDirectionsFn
+    });
+    init();
+  };
+
+  angular.module('snwMap.exerciseTwo').controller('exerciseTwoCtrl', exerciseTwoCtrl);
+})();

@@ -1,8 +1,6 @@
 (function() {
   'use strict';
-  // angular.module('snwMap', ['snwMap.gmap', 'snwMap.panelResults', 'snwMap.lateralPanel',
-  //     'snwMap.panelSwitch', 'snwMap.languagePanel'
-  angular.module('snwMap', ['snwMap.gmap', 'snwMap.exerciseOne'
+  angular.module('snwMap', ['snwMap.gmap', 'snwMap.exerciseOne', 'snwMap.exerciseTwo'
     ])
     .config(function(GoogleMapApiProvider) {
       GoogleMapApiProvider.configure({
