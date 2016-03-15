@@ -20,7 +20,9 @@ In this exercise you will work with GEOCODING: https://developers.google.com/map
 
 3. Modify the listener event handler function to reverse geocode the latLng to get a textual address
 
-* Add a Geocoder object in the init function and modify the event handler function to use the geocode method to reverse geocode the event.latLng. Show the address in a infoWindow associated to the marker. 
+* Add a Geocoder object in the init function and modify the event handler function to use the geocode method to reverse geocode the event.latLng. Show the address in a infoWindow associated to the marker.
+
+4. When the directive is destroyed, remember to remove the event handler (we don't want that behaviour when we click on the map for the next exercises). 
 
 ### Exercise 2
 
